@@ -1,5 +1,6 @@
 struct Stacks
 {
+    #define maxSize 10
     int frame [10];
     int index;
 };
