@@ -13,10 +13,11 @@ int main() {
     int conditional = 1;
     int popVal = 0;
 
-    printf("Welcome to the stack program.\n\n");
+    printf("Welcome to the stack program\n\n");
     
     while (conditional == 1) {
-        printf("Enter option: ");
+        char enter[] = "Enter an option: ";
+        printf("%s", enter);
         scanf(" %c", &nextChar);
 
         if (nextChar == 117) {
@@ -28,7 +29,7 @@ int main() {
             printStack(mode);
         } else if (nextChar == 111) {
             if (pop(&popVal) == 1) {
-                printf("Underflow!!!\n");
+                printf("Undeflow!!!\n");
                 printStack(mode);
             }else{
                 printf("Popped ");
