@@ -56,13 +56,3 @@ int printElement(int value, int format){
 }
 
 /* everything in main is just for test, not to included in the submitted version*/
-int main(){
-    int popVal = 0;
-    push(1);
-    push(2);
-    push(3);
-    printStack(0);
-    pop(&popVal);
-    printf("Value popped: %d\n", popVal);
-    printStack(0);
-}
