@@ -7,3 +7,5 @@ struct Stacks
 
 int push(int value);
 int pop(int *value);
+int printStack(int format);
+int printElement(int value, int format);
