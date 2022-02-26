@@ -1,8 +1,3 @@
-#ifndef ASSIGNMENT6_STACK_H
-#define ASSIGNMENT6_STACK_H
-
-#endif
-
 struct Stacks
 {
     #define maxSize 10

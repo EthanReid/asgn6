@@ -6,14 +6,14 @@
 struct Stacks stack;
 
 int push(int value){
-    if (stack.index > maxSize){
+    if (stack.index >= maxSize){
         return 1;
     }else{
         stack.frame[stack.index] = value;
         stack.index++;
         return 0;
     }
-};
+}
 
 int pop(int *value){
     if (stack.index<=0){
@@ -24,7 +24,7 @@ int pop(int *value){
         stack.frame[stack.index] = 0;
         return 0;
     } 
-};
+}
 
 int printStack(int format){
     int printIndex = 0;

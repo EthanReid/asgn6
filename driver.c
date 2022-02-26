@@ -1,3 +1,8 @@
+/*
+driver.c, stack.c, stack.h
+Ethan Reid
+I worked with Geoff Blaylock but we both went different routes so are turning in different assignments.
+*/
 #include <stdio.h>
 #include "stack.h"
 
@@ -12,18 +17,19 @@ int main() {
     
     while (conditional == 1) {
         printf("Enter an option: ");
-        fflush( stdout );
-        fflush( stdin );
-        scanf("%c", &nextChar);
+        scanf(" %c", &nextChar);
 
         if (nextChar == 117) {
             printf("What number? ");
             scanf("%d", &nextInt);
-            push(nextInt);
+            if (push(nextInt) == 1){
+                printf("Overflow!!!\n");
+            }
             printStack(mode);
         } else if (nextChar == 111) {
             if (pop(&popVal) == 1) {
-                printf("Undeflow!!!");
+                printf("Undeflow!!!\n");
+                printStack(mode);
             }else{
                 printf("Popped ");
                 printf("%d\n", popVal);
@@ -45,4 +51,5 @@ int main() {
 
         printf("\n");
     }
+    return 0;
 }
