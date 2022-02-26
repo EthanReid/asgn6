@@ -28,6 +28,7 @@ int pop(int *value){
 
 int printStack(int format){
     int printIndex = 0;
+    printf("Stack: ");
     while (printIndex < stack.index){
         printElement(stack.frame[printIndex], format);
         printf(" ");
