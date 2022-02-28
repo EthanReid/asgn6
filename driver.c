@@ -17,7 +17,7 @@ int main() {
     
     while (conditional == 1) {
         printf("Enter option: ");
-        scanf(" %c", &nextChar);
+        scanf("\n%c", &nextChar);
 
         if (nextChar == 117) {
             printf("What number? ");
@@ -47,9 +47,13 @@ int main() {
         } else if (nextChar == 120) {
             printf("Goodbye!");
             conditional = 0;
+        }else{
+            printf("\n\n");
+            continue;
         }
 
         printf("\n");
+        fflush(stdin);
     }
     return 0;
 }
